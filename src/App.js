@@ -1,7 +1,6 @@
 import { Col, Container, Row, Stack } from 'react-bootstrap';
 import { IconContext } from 'react-icons';
 import { IoArrowForwardOutline, IoCalendarOutline, IoLocationOutline } from 'react-icons/io5';
-import fileResume from './static/resume.pdf';
 
 const iconOptions = {
     size: '1.25em',
@@ -19,7 +18,7 @@ const dataLinks = [
     },
     {
         text: "Resume",
-        link: fileResume,
+        link: "files/resume.pdf",
     },
     {
         text: "LinkedIn",
