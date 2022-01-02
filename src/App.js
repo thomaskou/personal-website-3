@@ -1,6 +1,7 @@
 import { Col, Container, Row, Stack } from 'react-bootstrap';
 import { IconContext } from 'react-icons';
-import { IoArrowForwardOutline, IoCalendarOutline, IoChevronDownOutline, IoLocationOutline } from 'react-icons/io5';
+import { IoArrowForwardOutline, IoCalendarOutline, IoLocationOutline } from 'react-icons/io5';
+import fileResume from './static/resume.pdf';
 
 const iconOptions = {
     size: '1.25em',
@@ -18,7 +19,7 @@ const dataLinks = [
     },
     {
         text: "Resume",
-        link: "/files/resume.pdf",
+        link: fileResume,
     },
     {
         text: "LinkedIn",
@@ -70,7 +71,7 @@ const dataExperience = [
         team: 'GeForce NOW',
         title: 'Software Engineer Intern',
         titleShort: 'SWE Intern',
-        description: <>Full-stack for <a href='https://www.nvidia.com/en-us/geforce-now/' target='_blank'>GeForce NOW</a> content management system.</>,
+        description: <>Full-stack for <a href='https://www.nvidia.com/en-us/geforce-now/' target='_blank' rel='noopener noreferrer'>GeForce NOW</a> content management system.</>,
         location: 'Santa Clara, CA',
         remote: true,
         start: new Date('May 3, 2021'),
@@ -109,7 +110,7 @@ const dataExperience = [
         company: 'Prizm Media',
         title: 'Junior Web Developer Intern',
         titleShort: 'Web Intern',
-        description: <>Full-stack &amp; QA for <a href='https://rxtome.com/' target='_blank'>RxtoMe</a> prescription ordering service.</>,
+        description: <>Full-stack &amp; QA for <a href='https://rxtome.com/' target='_blank' rel='noopener noreferrer'>RxtoMe</a> prescription ordering service.</>,
         location: 'Vancouver, BC',
         start: new Date('April 29, 2019'),
         end: new Date('August 23, 2019'),
@@ -156,6 +157,7 @@ const App = () => {
                                                     rel='noopener noreferrer'
                                                     className='header-link'
                                                     key={'header-link-' + linkIndex}
+                                                    {...{download: link.download}}
                                                 >
                                                     {link.text}
                                                 </a>
@@ -181,7 +183,7 @@ const App = () => {
                                                 }} />}
                                             </div>
                                             <div className='experience-info'>
-                                                <a className='company-link' href={data.link} target='_blank'>
+                                                <a className='company-link' href={data.link} target='_blank' rel='noopener noreferrer'>
                                                     <Stack direction='horizontal' gap={2}>
                                                         <h3>{Date.now() < data.start && 'Incoming '}{data.titleShort} @ {data.company}</h3>
                                                         <IoArrowForwardOutline size={'1em'} />
