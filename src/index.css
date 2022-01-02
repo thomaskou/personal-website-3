@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: var(--bs-light);
+}
+
+@media (min-width: 768px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 640px !important;
+    }
+}
+
+.util-vspacing {
+    margin-bottom: 4em;
+}
+
+.header-photo {
+    max-width: 6em;
+    max-height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.header-photo img {
+    max-width: 120%;
+    max-height: 120%;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    color: var(--bs-gray);
+    height: 75vh;
+}
+
+.section-header h1 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header h3 {
+    font-size: 1.2rem;
+    font-weight: var(--bs-body-font-weight);
+    margin-bottom: 0.5rem;
+}
+
+.section h2 {
+    font-size: 1rem;
+    color: var(--bs-gray);
+    text-transform: uppercase;
+}
+
+.experience-card {
+    margin-top: 1.75em;
+}
+
+.experience-logo {
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 575px) {
+    .experience-logo {
+        display: none;
+    }
+}
+
+.experience-info {
+    color: var(--bs-gray);
+}
+
+.experience-info .company-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.experience-info .company-link:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.experience-info h3 {
+    color: var(--bs-body-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.18em;
+}
+
+.experience-description {
+    color: var(--bs-dark);
+    padding-top: 0.3em;
+}
+
+.education-info {
+    color: var(--bs-gray);
+    margin-top: 1.75em;
+}
+
+.education-info h3 {
+    color: var(--bs-body-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.18em;
+}
+
+.section-footer {
+    color: var(--bs-gray-500);
+}
