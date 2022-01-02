@@ -138,7 +138,7 @@ const App = () => {
                                 <div>
                                     <Stack direction='vertical' gap={4}>
                                         <div className='header-photo'>
-                                            <img src={'photos/self-linkedin.jfif'} />
+                                            <img src={'photos/self-linkedin.jpg'} />
                                         </div>
                                         <div>
                                             <h1>Thomas Kou</h1>
