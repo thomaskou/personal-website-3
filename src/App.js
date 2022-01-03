@@ -123,8 +123,8 @@ const dataEducation = {
     degree: 'Bachelor of Computer Science, Honours, Co-op',
     degreeShort: 'B.C.S. Computer Science',
     location: 'Waterloo, ON',
-    start: new Date('September 2018'),
-    end: new Date('April 2023'),
+    start: new Date('September 1, 2018'),
+    end: new Date('April 30, 2023'),
 };
 
 const App = () => {
