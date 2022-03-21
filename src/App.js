@@ -61,7 +61,7 @@ const dataExperience = [
         location: 'Menlo Park, CA',
         remote: true,
         start: new Date('January 18, 2022'),
-        end: new Date('April 29, 2022'),
+        end: new Date('April 28, 2022'),
         logo: 'logo_meta.png',
         link: 'https://about.facebook.com/',
     },
