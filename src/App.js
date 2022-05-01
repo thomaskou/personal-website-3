@@ -58,6 +58,7 @@ const dataExperience = [
         company: 'Meta',
         title: 'Software Engineer Intern',
         titleShort: 'SWE Intern',
+        description: 'Full-stack for VR store & developer engagement team.',
         location: 'Menlo Park, CA',
         remote: true,
         start: new Date('January 18, 2022'),
