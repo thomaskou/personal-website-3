@@ -47,6 +47,7 @@ const dataExperience = [
         company: 'Jane Street',
         title: 'Software Engineer Intern',
         titleShort: 'SWE Intern',
+        description: 'Market data & bookings pipeline development.',
         location: 'New York, NY',
         start: new Date('May 31, 2022'),
         end: new Date('August 19, 2022'),
